@@ -1,0 +1,12 @@
+{
+    "navbar": {
+        "home": "Accueil",
+        "about": "À propos",
+        "projects": "Projets",
+        "contact": "Contact"
+    },
+    "home": {
+        "hello": "Salut, je suis {{name}}",
+        "description": "Hello world!"
+    }
+}

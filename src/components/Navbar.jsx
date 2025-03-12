@@ -1,6 +1,10 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { Languages } from "lucide-react";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
@@ -23,31 +27,37 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#home"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {" "}
-              Home
+              {t('navbar.home')}
             </a>
             <a
               href="#about"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {" "}
-              About{" "}
+              {t('navbar.about')}{" "}
             </a>
             <a
               href="#projects"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {" "}
-              Projects{" "}
+              {t('navbar.projects')}{" "}
             </a>
             <a
               href="#contact"
-              className="text-gray-300 hove:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {" "}
-              Contact{" "}
+              {t('navbar.contact')}{" "}
+            </a>
+            <a
+              className="text-gray-300  cursor-pointer hover:text-white transition-colors"
+            >
+              {" "}
+              <Languages />{" "}
             </a>
           </div>
         </div>
