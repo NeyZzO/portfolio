@@ -111,8 +111,7 @@ export const About = () => {
                   </Trans>
                 </li>
                 <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing...
+                  <strong>Udemy course</strong> - The Complete Web Developer A to Z by <a href="https://www.udemy.com/course/formation-developpeur-web/" target='_blank' className="underline text-green-500">John Taieb</a>
                 </li>
               </ul>
             </div>
