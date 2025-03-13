@@ -14,7 +14,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const {i18n} = useTranslation();
 
-  i18n.changeLanguage("en");
+  i18n.changeLanguage("fr");
   return (
     <>
       <div

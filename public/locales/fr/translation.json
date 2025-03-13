@@ -26,6 +26,23 @@
         }
     },
     "projects": {
-        "title": "Mes projets"
+        "title": "Mes projets",
+        "more": "Page github",
+        "1": {
+            "name": "Messagerie instantanée",
+            "description": "Projet non terminé: Une application de messagerie instantanée avec un système d'authentification, gestion de profil et historique de message."
+        },
+        "2": {
+            "name": "Application d'authentification centralisée",
+            "description": "Une application assez simple d'authentification centralisée se basant sur les modèles OAuth2.0 et OpenID Connect. Permet de centraliser l'authentification parmi plusieurs applications."
+        },
+        "3": {
+            "name": "Python Snake",
+            "description": "Un jeu du snake codé en python."
+        },
+        "4": {
+            "name": "Jeu de la vie",
+            "description": "Projet réalisé au Lycée, implémentation du jeu de la vie en JavaScript."
+        }
     }
 }

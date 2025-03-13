@@ -44,5 +44,12 @@
             "name": "Game Of Life",
             "description": "Game of life implementation as part of a school project during High-School."
         }
+    },
+    "contact": {
+        "title": "Get in touch",
+        "mail": "Send me an E-Mail",
+        "name": "Name",
+        "message": "Your message",
+        "socials": "Socials"
     }
 }
