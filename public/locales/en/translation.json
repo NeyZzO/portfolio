@@ -7,6 +7,10 @@
     },
     "home": {
         "hello": "Hi, I'm {{name}}",
-        "description": "Hello world!"
+        "description": "I'm a french student developer currently studying at Orsay's Institute of Technology and preparing a Bachelor's degree in Computer science."
+    },
+    "about": {
+        "title": "About me",
+        "description": "I love full-stack web development but my goal is to get a Ph.D in Computer Science."
     }
 }
