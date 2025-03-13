@@ -23,7 +23,7 @@ export const Home = () => {
               href="#projects"
               className="bg-green-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
             >
-              View Projects
+              {t("home.projects_btn")}
             </a>
 
             <a
@@ -32,7 +32,7 @@ export const Home = () => {
              hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-green-500/10"
             >
               <div style={{display: "flex", flexDirection: 'row'}}>
-                <Download style={{padding: "5px"}}/> <div>Download CV</div>
+                <Download style={{padding: "5px"}}/> <div>{t("home.cv_btn")}</div>
               </div>
             </a>
           </div>

@@ -1,17 +1,16 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 export const About = () => {
   const frontendSkills = [
     "React",
     "SCSS",
-    "TypeScript",
     "TailwindCSS",
   ];
 
-  const backendSkills = ["Node.js", "Python", "PostgreSQL", "ExpressJS", 'PHP'];
+  const backendSkills = ["Node.js", "PostgreSQL", "ExpressJS", 'PHP'];
 
-  const languages = ['Java', 'C#', 'C++', 'PHP'];
+  const languages = ['Java', 'C#', 'C++', 'PHP', "SQL", "JavaScript", "TypeScript", "Python"];
 
   const learningSkills = ['Next.js', 'Godot' ];
 
@@ -68,7 +67,7 @@ export const About = () => {
               </div>
 
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Languages I know </h3>
+                <h3 className="text-xl font-bold mb-4"> {t('about.languages')} </h3>
                 <div className="flex flex-wrap gap-2">
                   {languages.map((tech, key) => (
                     <span
@@ -84,7 +83,7 @@ export const About = () => {
               </div>
 
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> I'm currently learning </h3>
+                <h3 className="text-xl font-bold mb-4"> {t('about.learning')} </h3>
                 <div className="flex flex-wrap gap-2">
                   {learningSkills.map((tech, key) => (
                     <span
@@ -104,11 +103,12 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
+              <h3 className="text-xl font-bold mb-4"> 🏫 {t('about.education.title')} </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> B.S. in Computer Science </strong> - XYZ University
-                  (2016-2020)
+                  <Trans i18nKey="about.education.but">
+                  <strong>Bachelor's degree in Computer Science</strong> - Orsay's IUT, Université Paris Saclay (2024 - 2027)
+                  </Trans>
                 </li>
                 <li>
                   Relevant Coursework: Data Structures, Web Development, Cloud
@@ -117,9 +117,9 @@ export const About = () => {
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+              <h3 className="text-xl font-bold mb-4"> 💼 {t('about.work.title')} </h3>
               <div className="space-y-4 text-gray-300">
-                <div>
+                {/* <div>
                   <h4 className="font-semibold">
                     {" "}
                     Software Engineer at ABC Corp (2020 - Present){" "}
@@ -128,18 +128,9 @@ export const About = () => {
                     Developed and maintained microservices for cloud-based
                     applications.
                   </p>
-                </div>
+                </div> */}
 
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Intern at DEF Startups (2019){" "}
-                  </h4>
-                  <p>
-                    Assisted in building front-end components and integration
-                    REST APIs
-                  </p>
-                </div>
+                <em><strong>{t("about.work.looking")}</strong></em>
               </div>
             </div>
           </div>

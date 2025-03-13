@@ -7,10 +7,42 @@
     },
     "home": {
         "hello": "Hi, I'm {{name}}",
-        "description": "I'm a french student developer currently studying at Orsay's Institute of Technology and preparing a Bachelor's degree in Computer science."
+        "description": "I'm a french student developer currently studying at Orsay's Institute of Technology and preparing a Bachelor's degree in Computer science.",
+        "projects_btn": "View projects",
+        "cv_btn": "Download CV"
     },
     "about": {
         "title": "About me",
-        "description": "I love full-stack web development but my goal is to get a Ph.D in Computer Science."
+        "description": "I love full-stack web development but my goal is to get a Ph.D in Computer Science. I love studying Computer Science and I feel like getting a Ph.D would be like the ultimate achievement. ",
+        "languages": "Languages I know",
+        "learning": "I'm currently learning",
+        "education": {
+            "title": "Education", 
+            "but": "<0>Bachelor's degree in Computer Science</0> - Orsay's IUT, Université Paris Saclay (2024 - 2027)"
+        },
+        "work": {
+            "title": "Work experience",
+            "looking": "I'm currently looking for an apprenticeship in computer science, ideally in Full-Stack web development"
+        }
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "more": "View project",
+        "1": {
+            "name": "Real-Time Chat app",
+            "description": "Unfinished project: a real-time chat application with authentication, user profiles and message history."
+        },
+        "2": {
+            "name": "Centralized Authentication App",
+            "description": "A centralized authentication application based on the OAuth2 & OpenID connect models."
+        },
+        "3": {
+            "name": "Python Snake",
+            "description": "A simple snake game coded in python."
+        },
+        "4": {
+            "name": "Game Of Life",
+            "description": "Game of life implementation as part of a school project during High-School."
+        }
     }
 }

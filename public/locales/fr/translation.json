@@ -7,6 +7,25 @@
     },
     "home": {
         "hello": "Salut, je suis {{name}}",
-        "description": "Hello world!"
+        "description": "J'ai 19 ans je suis français et j'étudie actuellement à l'IUT D'Orsay de l'Université Paris-Saclay afin d'obtenir un B.U.T.",
+        "projects_btn": "Mes projets",
+        "cv_btn": "Mon CV"
+    },
+    "about": {
+        "title": "À propos de moi",
+        "description": "J'aime beaucoup le développement web full-stack. Mon but après le B.U.T. Informatique est de continuer sur un Master puis sur un Doctorat car j'adore étudier l'informatique.",
+        "languages": "Les langages que je connais",
+        "learning": "Ce que j'apprend",
+        "education": {
+            "title": "Éducation",
+            "but": "<0>B.U.T. Informatique</0> - IUT d'Orsay, Université Paris Saclay (2024 - 2027)"
+        },
+        "work": {
+            "title": "Expérience pro.",
+            "looking": "Je suis actuellement à la recherche d'un contrat d'apprentissage de 24 mois dans l'informatique, idéalement dans le développement web full-stack."
+        }
+    },
+    "projects": {
+        "title": "Mes projets"
     }
 }
