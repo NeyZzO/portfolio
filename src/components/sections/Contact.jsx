@@ -36,12 +36,18 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-500 to-green-200 bg-clip-text text-transparent text-center">
-            {" "}
             {t("contact.title")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
+            <div className="p-6 rounded-xl border border-white/10 flex justify-center h-auto flex-col gap-5">
+              <h3 className="text-xl font-bold mb-2 text-center align-middle">{t('contact.socials')}</h3>
+              <div className="flex justify-center gap-10">
+                <FaGithub className="text-5xl cursor-pointer hover:text-amber-400 hover:-translate-y-1 transition"/>
+                <FaLinkedin className="text-5xl cursor-pointer hover:text-[#0E76A8] hover:-translate-y-1 transition"/>
+              </div>
+            </div>
             <div className="p-6 rounded-xl border border-white/10">
               <h3 className="text-xl font-bold mb-2">{t('contact.mail')}</h3>
               <form className="space-y-6" onSubmit={handleSubmit}>
@@ -53,7 +59,7 @@ export const Contact = () => {
                     required
                     value={formData.name}
                     className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-green-500 focus:bg-green-500/5"
-                    placeholder="Name..."
+                    placeholder={`${t('contact.name')}...`}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -89,7 +95,7 @@ export const Contact = () => {
                     rows={5}
                     value={formData.message}
                     className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-green-500 focus:bg-green-500/5"
-                    placeholder="Your Message..."
+                    placeholder={`${t('contact.message')}...`}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -107,13 +113,7 @@ export const Contact = () => {
                 </button>
               </form>
             </div>
-            <div className="p-6 rounded-xl border border-white/10 flex justify-center h-auto flex-col gap-5">
-              <h3 className="text-xl font-bold mb-2 text-center align-middle">{t('contact.socials')}</h3>
-              <div className="flex justify-center gap-10">
-                <FaGithub className="text-5xl cursor-pointer hover:text-amber-400 hover:-translate-y-1 transition"/>
-                <FaLinkedin className="text-5xl cursor-pointer hover:text-[#0E76A8] hover:-translate-y-1 transition"/>
-              </div>
-            </div>
+           
           </div>
         </div>
       </RevealOnScroll>

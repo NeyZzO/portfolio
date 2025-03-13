@@ -44,5 +44,12 @@
             "name": "Jeu de la vie",
             "description": "Projet réalisé au Lycée, implémentation du jeu de la vie en JavaScript."
         }
+    },
+    "contact": {
+        "title": "Me contacter",
+        "mail": "Envoyez-moi un E-Mail",
+        "name": "Nom",
+        "message": "Votre message",
+        "socials": "Réseaux sociaux"
     }
 }
