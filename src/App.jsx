@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
@@ -12,9 +12,12 @@ import { Contact } from "./components/sections/Contact";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const {i18n} = useTranslation();
+  const { i18n } = useTranslation();
 
-  i18n.changeLanguage("fr");
+  // useEffect(() => {
+  //   i18n.changeLanguage("en");
+  // }, [i18n]);
+
   return (
     <>
       <div

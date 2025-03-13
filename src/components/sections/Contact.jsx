@@ -29,6 +29,10 @@ export const Contact = () => {
       })
       .catch(() => alert("Oops! Something went wrong. Please try again."));
   };
+  
+  const onSocialClick = (social) => {
+    window.open(social, '_blank');
+  }
 
   return (
     <section
@@ -44,8 +48,8 @@ export const Contact = () => {
             <div className="p-6 rounded-xl border border-white/10 flex justify-center h-auto flex-col gap-5">
               <h3 className="text-xl font-bold mb-2 text-center align-middle">{t('contact.socials')}</h3>
               <div className="flex justify-center gap-10">
-                <FaGithub className="text-5xl cursor-pointer hover:text-amber-400 hover:-translate-y-1 transition"/>
-                <FaLinkedin className="text-5xl cursor-pointer hover:text-[#0E76A8] hover:-translate-y-1 transition"/>
+                <FaGithub className="text-5xl cursor-pointer hover:text-amber-400 hover:-translate-y-1 transition" onClick={() => onSocialClick('https://github.com/NeyZzO')}/>
+                <FaLinkedin className="text-5xl cursor-pointer hover:text-[#0E76A8] hover:-translate-y-1 transition" onClick={() => onSocialClick('https://www.linkedin.com/in/eliott-dagostinoz/')}/>
               </div>
             </div>
             <div className="p-6 rounded-xl border border-white/10">

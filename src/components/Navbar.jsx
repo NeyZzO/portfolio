@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Languages } from "lucide-react";
+import LanguageSelector from "./LanguageSelector";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -53,12 +53,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {" "}
               {t('navbar.contact')}{" "}
             </a>
-            <a
-              className="text-gray-300  cursor-pointer hover:text-white transition-colors"
-            >
-              {" "}
-              <Languages />{" "}
-            </a>
+            <div className="cursor-pointer">
+              <LanguageSelector />
+            </div>
           </div>
         </div>
       </div>
