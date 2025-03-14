@@ -107,7 +107,7 @@ export const About = () => {
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
                   <Trans i18nKey="about.education.but">
-                  <strong>Bachelor's degree in Computer Science</strong> - Orsay's IUT, Université Paris Saclay (2024 - 2027)
+                  <strong>Bachelor&lsquo;s degree in Computer Science</strong> - Orsay&lsquo;s IUT, Université Paris Saclay (2024 - 2027)
                   </Trans>
                 </li>
                 <li>

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
