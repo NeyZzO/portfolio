@@ -22,7 +22,7 @@ function App() {
         <Home />
         <About />
         <Projects />
-        <DownloadCvModal />
+        {/*<DownloadCvModal />*/}
         <Contact />
       </div>
     </>
