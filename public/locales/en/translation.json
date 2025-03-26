@@ -7,9 +7,9 @@
     },
     "home": {
         "hello": "Hi, I'm {{name}}",
-        "description": "I'm a french student developer currently studying at Orsay's Institute of Technology and preparing a Bachelor's degree in Computer science.",
+        "description": "I'm a 19 years old french student developer currently studying at Orsay's Institute of Technology and preparing a bachelor's degree in Computer science.",
         "projects_btn": "View projects",
-        "cv_btn": "Download CV"
+        "contact_btn": "Get in touch"
     },
     "about": {
         "title": "About me",

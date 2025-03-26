@@ -9,7 +9,7 @@
         "hello": "Salut, je suis {{name}}",
         "description": "J'ai 19 ans je suis français et j'étudie actuellement à l'IUT D'Orsay de l'Université Paris-Saclay afin d'obtenir un B.U.T.",
         "projects_btn": "Mes projets",
-        "cv_btn": "Mon CV"
+        "contact_btn": "Me contacter"
     },
     "about": {
         "title": "À propos de moi",

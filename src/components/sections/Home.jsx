@@ -27,13 +27,11 @@ export const Home = () => {
             </a>
 
             <a
-              href=""
+              href="#contact"
               className="border border-green-500/50 text-green-500 py-3 px-6 rounded font-medium transition-all duration-200 
              hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-green-500/10"
             >
-              <div style={{display: "flex", flexDirection: 'row'}}>
-                <Download style={{padding: "5px"}}/> <div>{t("home.cv_btn")}</div>
-              </div>
+              {t("home.contact_btn")}
             </a>
           </div>
         </div>

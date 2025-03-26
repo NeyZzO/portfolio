@@ -7,7 +7,6 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import "./index.css";
 import { Contact } from "./components/sections/Contact";
-import DownloadCvModal from "./components/DownloadCvModal";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +21,6 @@ function App() {
         <Home />
         <About />
         <Projects />
-        {/*<DownloadCvModal />*/}
         <Contact />
       </div>
     </>
