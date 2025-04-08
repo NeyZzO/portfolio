@@ -31,4 +31,4 @@ jobs:
         external_repository: NeyZzO/NeyZzO.github.io
         publish_dir: ./dist
         user_name: NeyZzO
-        user_email: ton_email@example.com
+        user_email: eliott.dagostinoz@gmail.com
