@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # ou "master" si c'est ta branche principale
+      - main  # change si ta branche principale a un autre nom
 
 jobs:
   build-and-deploy:
@@ -16,15 +16,19 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 22
+        node-version: 20
+        cache: 'pnpm'
+
+    - name: Install pnpm
+      run: npm install -g pnpm
 
     - name: Install dependencies
-      run: pnpm ci
+      run: pnpm install
 
     - name: Build the project
       run: pnpm run build
 
-    - name: Deploy to GitHub Pages repo
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.GH_PAGES_TOKEN }}
